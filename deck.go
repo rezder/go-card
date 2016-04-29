@@ -22,10 +22,11 @@ type Deck struct {
 
 func New(i int) *Deck {
 	deck := Deck{
-		Perm: rand.Perm(i),
 		Delt: make([]bool, i), // should all be zero value
 		Top:  0,
 	}
+	rand.Seed(time.Now().UnixNano())
+	deck.Perm = rand.Perm(i)
 	return &deck
 }
 func (deck *Deck) Equal(other *Deck) (equal bool) {

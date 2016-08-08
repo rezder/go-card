@@ -1,2 +1,2 @@
 # go-deck
-A deck(of cards)
+A deck of cards.

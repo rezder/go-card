@@ -8,8 +8,8 @@ package deck
 import (
 	"errors"
 	"fmt"
+	slice "github.com/rezder/go-slice/int"
 	"math/rand"
-	slice "rezder.com/slice/int"
 	"time"
 )
 

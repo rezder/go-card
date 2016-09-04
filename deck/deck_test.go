@@ -58,7 +58,7 @@ var co = [4]string{
 }
 
 func TestSave(t *testing.T) {
-	fileName := "test/save.gob"
+	fileName := "_test/save.gob"
 	deck := New(10)
 	file, err := os.Create(fileName)
 	//f,err:=os.Open(fileName)
